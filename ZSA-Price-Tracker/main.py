@@ -80,15 +80,13 @@ root.title(" ZSA_app  ")
 root.geometry("450x380")
 root.configure(bg="#000000")  # بک گراند مشکی
 
-# ===== لوگو اینجا اضافه کن =====
-# لوگو باید PNG شفاف باشه و اندازه مناسب (مثلاً 100x100)
-# کافیه فایل لوگو رو کنار همین فایل کد بذاری و نامش رو اینجا بگذاری
+
+
 try:
     logo_img = tk.PhotoImage(file="logo.png")
     logo_label = tk.Label(root, image=logo_img, bg="#000000")
     logo_label.pack(pady=10)
 except Exception:
-    # اگر لوگو نیست، فقط متن رو نشون بده
     logo_label = tk.Label(root, text="ZSA Price Tracker", font=("Arial", 24, "bold"), fg="#00FF00", bg="#000000")
     logo_label.pack(pady=20)
 
